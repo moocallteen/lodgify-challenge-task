@@ -14,9 +14,9 @@ describe("Lodgify challenge Pricing page test", () => {
   });
 
   beforeEach(() => {
-    (yealyPeriodHeading = "Yearly"),
-      (starterCardHeading = "Starter"),
-      (proCardHeading = "Professional");
+    yealyPeriodHeading = "Yearly";
+    starterCardHeading = "Starter";
+    proCardHeading = "Professional";
     ultimateCardHeading = "Ultimate";
   });
 
