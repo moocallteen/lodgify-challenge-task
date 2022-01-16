@@ -7,8 +7,7 @@ describe("Lodgify challenge Pricing page test", () => {
     ultimateCardHeading,
     currencyValues,
     question01,
-    answer01,
-    contactLink;
+    answer01;
 
   before(() => {
     let base_url = "http://localhost:8080";
@@ -160,10 +159,10 @@ describe("Lodgify challenge Pricing page test", () => {
 
   it("should check the 'Third Scenario'", () => {
     /*
-  Using your own criteria, add tests according to what 
-  you think should be important to cover in this page 
-  "Lodgify Pricing". (Optional)
-  */
+    Using your own criteria, add tests according to what 
+    you think should be important to cover in this page 
+    "Lodgify Pricing". (Optional)
+    */
     cy.visit("/pricing.html");
     cy.get(pricingPage.rentalNumberInput)
       .scrollIntoView()
@@ -199,7 +198,7 @@ describe("Lodgify challenge Pricing page test", () => {
     cy.get(pricingPage.sliderRound).should("have.attr", "aria-valuenow", "75");
   });
 
-  it("should check the 'FAQ contant'", () => {
+  it("should check the 'FAQ content'", () => {
     cy.visit("pricing.html");
     cy.xpath(pricingPage.faqQest01)
       .scrollIntoView()
